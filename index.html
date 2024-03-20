@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>menu bar</title>
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="pass">
+            <img class="container" src="tech.png" alt="">
+            <nav id="menu">
+                <a href="">HOME</a>
+                <a href="">PRODUCT</a>
+                <a href="">SERVICE</a>
+                <a href="">CONTACT US</a>
+                <a href="">ABOUT</a>
+            </nav>
+            <div id="unix">
+                <img src="list.png" alt="menu">
+            </div>
+        </div>
+        <h3>Hello,Here Superbikes vehical <br> service is avaiables</h3>
+        <img class="text" src="bike.png" alt="bike">
+        <input type="text" class="search" placeholder="search here your requirement"><br><br>
+        <a href="" class="low">Low quantity</a>
+        <a href="" class="high">High quantity</a>
+        <script>
+        const unix =document.getElementById('unix');
+        const menu=document.getElementById('menu');
+        unix.addEventListener("click",()=>{
+            unix.classList.toggle("active");
+            menu.classList.toggle("active");
+        })
+        </script>
+    </body>
+</html>

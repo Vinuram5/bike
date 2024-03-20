@@ -1,0 +1,145 @@
+body{
+    background-image: url('back.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 650px;
+    height: 550px;
+    margin-top: -220px;
+}
+.pass{
+    display: flex;
+    text-align: center; 
+}
+#unix img{
+    margin-left: 220px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+.pass #menu{
+    display: flex;
+    text-align: center;
+    gap:20px;
+    margin-left: 350px;
+    margin-top: 40px;
+}
+.pass #menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+#menu a:hover{
+    color: rgba(255,255,255,0.9);
+}
+h3{
+    font-weight: bold;
+    color: beige;
+    font-size: 40px;
+    margin-left: 250px;
+}
+.text{
+    margin-left: 800px;
+    margin-top: -250px;
+    width: 400px;
+    height: 350px;
+}
+.search{
+    width: 310px;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 2px 5px; 
+    border-radius: 5px;
+    font-size: 15px;
+    color: black;
+    margin-left: 260px;
+}
+.low{
+    text-decoration: none;
+    border: 2px solid yellow;
+    font-size: 25px;
+    background: yellow;
+    border-radius: 7px;
+    width: 30px;
+    height: 10px;
+    padding: 10px;
+    margin-left: 260px;
+}
+.high{
+    text-decoration: none;
+    border: 2px solid yellow;
+    font-size: 25px;
+    padding: 10px;
+    background: yellow;
+    border-radius: 7px;
+    width: 30px;
+    height: 20px;
+}
+@media(max-width:768px){
+    #unix img{
+        display: block;
+        width: 90px;
+        height: 90px;
+        margin-left: 200px;
+        margin-top: 50px;
+        margin-right: 20px;
+    }
+    .pass #menu{
+        position: fixed;
+        left: -100%;
+        top: 150px;
+        flex-direction: column;
+        width: 100%;
+        height: 11%;
+        text-align: center;
+        margin: 16px 0;
+        transition: 0.3s;
+        background:slateblue;
+        padding: 50px 0;
+        font-size: 80px;
+
+    }
+    .pass #menu.active{
+          left:0;
+    }
+    h3{
+        font-size: 110px;
+        margin-left: 60px;
+        margin-right: 50px;
+        
+    }
+    .text{
+        width: 500px;
+        height: 400px;
+        display: none;
+
+    }  
+    .search{
+        width: 500px;
+        height: 50px;
+        font-size: 30px;
+        margin-left: 100px;
+        margin-top: -400px;
+    }
+    .low{
+        width: 350px;
+        font-size: 30px;
+        margin-left: 160px;
+    }
+    .high{
+        width: 10px;
+        font-size: 30px;
+        margin-right: px;
+    }
+    .container{
+        width: 700px;
+    
+    }           
+        
+    
+    
+}
